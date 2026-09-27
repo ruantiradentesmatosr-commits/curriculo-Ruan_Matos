@@ -1,0 +1,104 @@
+*{
+	text-justify: center; 
+	color: #F8FAFC;
+	background-color: #0F172A;
+	box-sizing: border-box;
+	margin: 0;
+}
+html{
+	scroll-behavior: smooth;/*incluso para dar um efeito de rotação fluida para as seções*/
+}
+
+h1{
+	color: #85BB65
+}
+
+button{
+	margin-right: 12px; /*adiciona espaço no lado direito de cada botão*/
+	background-color: #6366F1;
+	color: ghostwhite;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+button:hover{
+	background-color: greenyellow;
+	color: green;
+}
+
+*section{ 
+	margin-bottom: 30px;
+	padding: 20px 30px;
+	text-align: center;
+	object-position: cover;
+	border-radius: 5px;
+}
+
+section:target .card{
+ 	border-color: yellowgreen;
+ 	box-shadow: 0 0 15px rgba(173, 255, 47, 0.4);
+ 	transform: translateY(-5px);
+ 	transition: all 0.3s ease;
+ }
+
+.foto_perfil{
+    
+	align-items: flex-start;
+	display: flex;
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	object-fit: cover;
+	gap: 20px 30px;
+
+	
+}
+
+/*menu principal para as informações*/
+
+.banner {
+    background-color: transparent; 
+    display: flex;
+    justify-content: flex-start; /* Alinha todo o conteúdo do banner na esquerda */
+    align-items: center;       /* Alinha verticalmente no centro, se necessário */
+    padding: 20px;            
+}
+
+/*bloco de informações em cards*/
+.titulo {
+    background-color: #1e293b; 
+}
+ 
+ .container-cards{
+ 	display: grid; /*cria uma coluna automaticas com tamanho mínimo de 20px, 1fr*/
+ 	gap: 52px;
+ 	margin-top: 35px;
+ 	margin-bottom: 40px;
+ }
+
+ .card {
+ 	background-color: #1e293b;
+ 	color: #ffffff;
+ 	padding: 16px;
+ 	border-radius: 10px;
+ 	border: 1px solid #334155;
+ 	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+ 	transition: transform 0.2s, border-color 0,2s;
+ }
+ .card:hover {
+ 	transform: translateY(-5px);
+ 	border-color: skyblue;
+ }
+
+ .card h4{
+ 	font-size: 1.1rem;
+ 	margin-bottom: 8px;
+ 	color:#38bdf8;
+ }
+  .card p{
+ 	font-size: 0.9rem;
+ 	margin-bottom: 1,4px;
+ 	color:#cbd5e1;
+ }
