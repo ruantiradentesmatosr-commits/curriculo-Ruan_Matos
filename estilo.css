@@ -36,12 +36,27 @@ button:hover{
 	border-radius: 5px;
 }
 
-section:target .card{
- 	border-color: yellowgreen;
- 	box-shadow: 0 0 15px rgba(173, 255, 47, 0.4);
- 	transform: translateY(-5px);
- 	transition: all 0.3s ease;
- }
+@keyframes piscarBorda {
+    0% {
+        border-color: yellowgreen;
+        box-shadow: 0 0 15px rgba(173, 255, 47, 0.4);
+        transform: translateY(-5px);
+    }
+    70% {
+        border-color: yellowgreen;
+        box-shadow: 0 0 15px rgba(173, 255, 47, 0.4);
+        transform: translateY(-5px);
+    }
+    100% {
+        border-color: #334155; /* Volta para a cor original da borda do seu card */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Volta para a sombra original */
+        transform: translateY(0);
+    }
+}
+
+section:target .card {
+    animation: piscarBorda 2s ease forwards;
+}
 
 .foto_perfil{
     
